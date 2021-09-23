@@ -1,21 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using System;
 using UnityEngine;
-using System.Timers;
 
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private Transform _startPointCamera;    
-    [SerializeField] private GameObject [] _zones;
-    
-    private Player _player;
+    [SerializeField] private GameObject [] _zones;     
 
     private void Awake()
     {      
-        CameraStartPosition();
-        _player = new Player();        
+        CameraStartPosition();              
     }
 
     public void CameraMoveForZone (Transform zonePoint)
@@ -42,7 +35,4 @@ public class CameraController : MonoBehaviour
             _zones[i].gameObject.SetActive(true);
         }
     }
-
-   
-   
 }

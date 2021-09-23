@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int _gold;
-    [SerializeField] private int _exp;
-    [SerializeField] private int _gameDay = 1;
+    private int _gold = 0;
+    private int _exp = 0;
+    private int _gameDay = 0;
     
 
     public int Gold 
     { 
-        get => _gold; 
-        set => _gold = value; 
+        get => _gold;
+        set
+        {
+            if ((_gold - value) < 0)
+            {
+                Debug.Log("Нехватает денег на покупку");
+                return;
+            } 
+            _gold = value;            
+        }
     }
     public int Exp 
     { 
@@ -25,6 +30,4 @@ public class Player : MonoBehaviour
         set => _gameDay = value; 
     }
 
-
-   
 }

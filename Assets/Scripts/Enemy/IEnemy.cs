@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-
-
 public interface IEnemy 
 {
     public int HP { get; set; }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c8863287a109c40908f66ba4bdb10c, type: 3}
   m_Name: Zone 2 Wave 1.2
   m_EditorClassIdentifier: 
-  _countWave: 1
+  _numberWave: 1
   _enemy: {fileID: 2149911969811473188, guid: a4b31268c415bdd4b8ef73472bb3dd3f, type: 3}
   _enemyCount: 6
