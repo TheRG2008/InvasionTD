@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 150
-  _speed: 2
+  _speed: 3
   _defence: 0
   _buildingDamage: 2
   _goldForDeath: 30

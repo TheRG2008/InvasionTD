@@ -30,6 +30,15 @@ public class TownHall : MonoBehaviour, IBuilding
     public int GoldForBuilding 
         => _goldForBuilding;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Enemy>())
+        {
+            IEnemy enemy = other.GetComponent<Enemy>();
+            GetDamage(enemy);
+            Destroy(other.gameObject);
+        }
+    }
     public void Build()
     {
         
@@ -38,6 +47,7 @@ public class TownHall : MonoBehaviour, IBuilding
     public void Die()
     {
         Debug.Log("Ратуша разрушена");
+        Destroy(gameObject);
     }
 
     public void FixUp()
@@ -47,6 +57,6 @@ public class TownHall : MonoBehaviour, IBuilding
 
     public void GetDamage(IEnemy enemy)
     {
-        _life -= enemy.BuildingDamage;
+        Life -= enemy.BuildingDamage;
     }
 }

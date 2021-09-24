@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//[CreateAssetMenu(menuName = "Day/Wave", fileName = "Wave")]
+
 public class Wave : MonoBehaviour
 {
 	[SerializeField] private int _waveSize;
@@ -23,6 +23,7 @@ public class Wave : MonoBehaviour
 			if (_enemyCount == _waveSize)
 			{
 				CancelInvoke("SpawnEnemy");
+				_enemyCount = 0;
 			}
 		}
 	}
@@ -42,18 +43,4 @@ public class Wave : MonoBehaviour
 		enemy.GetComponent<Enemy>().waypoints = _wayPoints;
 
 	}
-
-
-
-
-
-	//public void StartWave (GameObject enemySpawn)
-	//{
-
-	//    for (int i = 0; i < _enemyCount; i++)
-	//    {
-	//        Debug.Log($"Враг {i+1} создан");
-	//        Instantiate(_enemy, enemySpawn.transform);            
-	//    }
-	//}
 }
