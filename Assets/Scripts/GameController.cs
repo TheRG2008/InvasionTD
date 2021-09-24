@@ -38,11 +38,10 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < _currentAtackZones.Count; i++)
             for (int j = 0; j < _currentAtackZones[i]._wavesAtack.Length; j++)
             {
-                Wave wave = _currentAtackZones[i]._wavesAtack[j];
-                GameObject EnemySpawnPoint = _currentAtackZones[i].Zone.GetComponent<Zone>().SpawnPoint;
+                Wave wave = _currentAtackZones[i]._wavesAtack[j];                
                 if (wave.NumberWave == 1)
                 {
-                    wave.StartWave(EnemySpawnPoint);
+                    wave.StartWave();
                 }
             }
         
