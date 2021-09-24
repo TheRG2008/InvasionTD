@@ -41,7 +41,7 @@ public class Gates : MonoBehaviour, IBuilding
     {
         if (other.GetComponent<Enemy>())
         {
-            IEnemy enemy = other.GetComponent<Enemy>();
+            IEnemy enemy = other.GetComponent<EnemyMy>();
             GetDamage(enemy);
             Destroy(other.gameObject);
         }

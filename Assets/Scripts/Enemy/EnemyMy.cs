@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IEnemy
+public class EnemyMy : MonoBehaviour, IEnemy
 {
     private int _hp;
     private float _speed;
