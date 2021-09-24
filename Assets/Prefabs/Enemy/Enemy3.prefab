@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 3273552189168987275}
   - component: {fileID: 4399483864084352073}
   - component: {fileID: 1601398007066600522}
-  - component: {fileID: -1843886623128944507}
-  - component: {fileID: 7011136758377845989}
+  - component: {fileID: -1942795355162307605}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e8c69fcdd3a1852459a4d577a3e04844, type: 2}
+  - {fileID: 2100000, guid: bbb3b746f075eb94da1fe36e0d032528, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,9 +112,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &-1843886623128944507
+--- !u!114 &-1942795355162307605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,15 +126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a67c03dd8310e648ad8c7218158df2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7011136758377845989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149911969811473188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f6fb993469e6748a4157b7fb066db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _hp: 150
+  _speed: 2
+  _defence: 0
+  _buildingDamage: 2
+  _goldForDeath: 30
+  _expForDeath: 200
+  _typeEnemy: 2
+  typeDefence: 0
+  waypoints: []

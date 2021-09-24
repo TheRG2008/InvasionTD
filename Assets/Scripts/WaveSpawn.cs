@@ -8,10 +8,11 @@ public class WaveSpawn : MonoBehaviour {
 	public Transform spawnPoint;
 	public float startTime;
 	public Transform[] WayPoints;
+	private int enemyCount;
 
 	public int EnemyCount
 	{
-		get { return enemyCount; }
+		get { return enemyCount; } //
 		set
 		{
 			enemyCount = value;
@@ -21,11 +22,10 @@ public class WaveSpawn : MonoBehaviour {
 			}
 		}
 	}
-	private int enemyCount;
 
 	void Start ()
     {
-	 InvokeRepeating("SpawnEnemy",startTime,EnemyInterval);
+		InvokeRepeating("SpawnEnemy",startTime,EnemyInterval);
 	}
 
 

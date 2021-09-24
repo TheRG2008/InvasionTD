@@ -37,7 +37,7 @@ class Fortifications : MonoBehaviour, IBuilding
     {
         if (other.GetComponent<Enemy>())
         {
-            IEnemy enemy = other.GetComponent<EnemyMy>();
+            IEnemy enemy = other.GetComponent<Enemy>();
             GetDamage(enemy);
             Destroy(other.gameObject);
         }
