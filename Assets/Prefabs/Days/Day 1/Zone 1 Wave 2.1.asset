@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79c8863287a109c40908f66ba4bdb10c, type: 3}
-  m_Name: Zone 1 Wave 2
+  m_Name: Zone 1 Wave 2.1
   m_EditorClassIdentifier: 
   _numberWave: 2
   _enemy: {fileID: 4159283749442561346, guid: 94c8c09f6f942b34a93a3f276f27aad9, type: 3}
