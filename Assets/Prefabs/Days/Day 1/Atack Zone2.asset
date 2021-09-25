@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Atack Zone2
   m_EditorClassIdentifier: 
   _wavesAtack:
-  - {fileID: 11400000, guid: d986ebc1ec8d9254e916f68ac518154a, type: 2}
-  - {fileID: 11400000, guid: 472471a815bb33042bb2d9b1f428d01b, type: 2}
+  - {fileID: 3564414694245444291, guid: 0290c81527fe47943b81e0c00aa961fe, type: 3}
+  - {fileID: 3564414694245444291, guid: dcd8280c7fe5dd34f81ccebf88783ffe, type: 3}
   _timeToStartWave: 2
   _timeToStartNextWave: 2
   _zone: {fileID: 6750411716423768176, guid: 0570be8bbcc37d14fb6e0752a3cf91c8, type: 3}
