@@ -135,3 +135,5 @@ MonoBehaviour:
   _typeEnemy: 2
   typeDefence: 0
   waypoints: []
+  wave: {fileID: 0}
+  day: {fileID: 1114854087349697735, guid: e443083001c1d904abeac479fc0c1a47, type: 3}

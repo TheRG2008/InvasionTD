@@ -10,7 +10,7 @@ public class EnemyVitaly : MonoBehaviour, IDamageable
     private int hp;
     public int Hp 
     {
-        get { return hp;}
+        get => hp;
         set 
         {
             hp = value;

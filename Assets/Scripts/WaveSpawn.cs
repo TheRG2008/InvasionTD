@@ -2,13 +2,13 @@
 using System.Collections;
 public class WaveSpawn : MonoBehaviour {
 
+	private int enemyCount;
 	public int waveSize;
 	public GameObject EnemyPrefab;
 	public float EnemyInterval;
 	public Transform spawnPoint;
 	public float startTime;
 	public Transform[] WayPoints;
-	private int enemyCount;
 
 	public int EnemyCount
 	{
@@ -29,7 +29,7 @@ public class WaveSpawn : MonoBehaviour {
 	}
 
 
-	void SpawnEnemy()
+	private void SpawnEnemy()
 	{
 		EnemyCount++;
 		GameObject enemy = GameObject.Instantiate(EnemyPrefab,spawnPoint.position,Quaternion.identity) as GameObject;

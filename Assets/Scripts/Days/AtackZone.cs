@@ -9,6 +9,8 @@ public class AtackZone : ScriptableObject
     [SerializeField] private float _timeToStartWave;
     [SerializeField] private float _timeToStartNextWave;
     [SerializeField] private GameObject _zone;
+    public bool isActive = true;
+    public int CounterZone = 1;
     public int Size { get; }
     public float TimeToStartWave
         => _timeToStartWave;
@@ -22,6 +24,20 @@ public class AtackZone : ScriptableObject
         Size = size;
         _wavesAtack = new Wave[size];
 
+    }
+
+    public void IsDayEnd()
+    {
+        int counter = 0;
+        for (int i = 0; i < _wavesAtack.Length; i++)
+        {
+            counter += _wavesAtack[i].EnemyCounter;
+        }
+        if (counter == 0 && isActive)
+        {
+            CounterZone--;
+            isActive = false;
+        }
     }
 
     public Wave GetWave(int index)

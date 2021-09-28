@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c8863287a109c40908f66ba4bdb10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waveSize: 10
+  _waveSize: 12
   _enemyCount: 0
   _enemyInterval: 3
   _startTime: 20

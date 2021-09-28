@@ -15,14 +15,21 @@ public class GameController : MonoBehaviour
         _player = new Player();
     }
 
+    private void Update()
+    {
+        //for (int i = 0; i < _currentAtackZones.Count; i++)
+        //{
+        //    _currentAtackZones[i].IsDayEnd();
+        //}
+    }
     public void StartDay()
     {
 
         _day = _days.GetCurrentDay(_player.GameDay);
-        TimerToStartWaves();
+        _day.IsActive = true;
         GetCurentAtackZone();
-        StartWave();
-        //_player.GameDay++;
+        WavesStarted();
+        _player.GameDay++;
     }
 
     private void GetCurentAtackZone()
@@ -33,7 +40,7 @@ public class GameController : MonoBehaviour
         }
         
     }
-    private void StartWave ()
+    private void WavesStarted ()
     {
         for (int i = 0; i < _currentAtackZones.Count; i++)
             for (int j = 0; j < _currentAtackZones[i]._wavesAtack.Length; j++)
@@ -47,10 +54,4 @@ public class GameController : MonoBehaviour
         
     }
 
-
-
-    private void TimerToStartWaves ()
-    {
-
-    }
 }

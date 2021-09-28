@@ -44,9 +44,7 @@ public class ChoiseTower : MonoBehaviour
             else
             {
                 HideChoiseTowerMenu();
-            }
-
-           
+            }  
 
             return; 
         }
@@ -60,7 +58,6 @@ public class ChoiseTower : MonoBehaviour
             {
                 _platforms[i].transform.GetChild(1).gameObject.SetActive(false);
             }
-
         }
     }
 }

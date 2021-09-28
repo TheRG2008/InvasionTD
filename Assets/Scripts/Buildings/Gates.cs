@@ -44,7 +44,7 @@ public class Gates : MonoBehaviour, IBuilding
         {
             IEnemy enemy = other.GetComponent<Enemy>();
             GetDamage(enemy);
-            Destroy(other.gameObject);
+            enemy.Die();
         }
     }
 
