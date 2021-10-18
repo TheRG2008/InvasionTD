@@ -10,8 +10,13 @@ public class Enemy : MonoBehaviour, IEnemy
     [SerializeField] private int _expForDeath;
     [SerializeField] private TypeEnemy _typeEnemy;
     [SerializeField] private TypeAtack typeDefence;
+    private int _curWaypointIndex = 0;
     public Transform[] waypoints;
-    private int curWaypointIndex = 0;
+    public float Speed { get => _speed; set => _speed = value; }
+    public int Defence { get => _defence; set => _defence = value; }
+    public int BuildingDamage { get => _buildingDamage; set => _buildingDamage = value; }
+    public int GoldForDeath { get => _goldForDeath; set => _goldForDeath = value; }
+    public int ExpForDeath { get => _expForDeath; set => _expForDeath = value; }
     public int HP
     {
         get => _hp;
@@ -22,23 +27,18 @@ public class Enemy : MonoBehaviour, IEnemy
                 Die();
         }
     }
-    public float Speed { get => _speed; set => _speed = value; }
-    public int Defence { get => _defence; set => _defence = value; }
-    public int BuildingDamage { get => _buildingDamage; set => _buildingDamage = value; }
-    public int GoldForDeath { get => _goldForDeath; set => _goldForDeath = value; }
-    public int ExpForDeath { get => _expForDeath; set => _expForDeath = value; }
 
     void Update()
     {
-        if (curWaypointIndex < waypoints.Length)
+        if (_curWaypointIndex < waypoints.Length)
         {
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[curWaypointIndex].position, Time.deltaTime * Speed);
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[_curWaypointIndex].position, Time.deltaTime * Speed);
 
-            transform.LookAt(waypoints[curWaypointIndex].position);
+            transform.LookAt(waypoints[_curWaypointIndex].position);
 
-            if (Vector3.Distance(transform.position, waypoints[curWaypointIndex].position) < 0.5f)
+            if (Vector3.Distance(transform.position, waypoints[_curWaypointIndex].position) < 0.5f)
             {
-                curWaypointIndex++;
+                _curWaypointIndex++;
             }
         }
     }
@@ -54,6 +54,5 @@ public class Enemy : MonoBehaviour, IEnemy
 
     public void Walk()
     {
-
     }
 }
