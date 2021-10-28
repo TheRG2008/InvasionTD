@@ -109,9 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1e34a60766afd4e851af85c9cb3391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
-  _damageSpeed: 0
-  _radiusAtack: 0
+  _damage: 10
+  _damageSpeed: 1
+  _radiusAtack: 3
   _goldForUpgrade: 0
   _isOpen: 1
   _goldForBiilding: 0

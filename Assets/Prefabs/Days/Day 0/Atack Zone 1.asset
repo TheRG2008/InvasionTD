@@ -18,4 +18,5 @@ MonoBehaviour:
   _timeToStartWave: 0
   _timeToStartNextWave: 0
   _zone: {fileID: 3382003887534734338, guid: f2b37a372a2b74541ab5fff8046a4f85, type: 3}
+  isActive: 0
   CounterZone: 1

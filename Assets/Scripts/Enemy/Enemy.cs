@@ -46,14 +46,14 @@ public class Enemy : MonoBehaviour, IEnemy
     }
     public void Die()
     {
-        wave.CheckALifeEnemy();
-        for (int i = 0; i < day._days.Length; i++)
-        {
-            if(day._days[i].IsActive)
-            {
-                day._days[i].EndDayCheck();
-            }
-        }
+        //wave.CheckALifeEnemy();
+        //for (int i = 0; i < day._days.Length; i++)
+        //{
+        //    if(day._days[i].IsActive)
+        //    {
+        //        day._days[i].EndDayCheck();
+        //    }
+        //}
         Destroy(gameObject);
     }
 

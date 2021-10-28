@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a67c03dd8310e648ad8c7218158df2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 200
+  _hp: 100
   _speed: 3
   _defence: 0
   _buildingDamage: 1
@@ -136,4 +136,3 @@ MonoBehaviour:
   typeDefence: 1
   waypoints: []
   wave: {fileID: 0}
-  day: {fileID: 1114854087349697735, guid: e443083001c1d904abeac479fc0c1a47, type: 3}

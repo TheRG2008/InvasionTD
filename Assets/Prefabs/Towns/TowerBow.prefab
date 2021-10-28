@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 0
   _damageSpeed: 0
-  _radiusAtack: 0
+  _radiusAtack: 20
   _goldForUpgrade: 0
   _isOpen: 1
   _goldForBiilding: 0
